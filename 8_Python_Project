@@ -1,0 +1,18 @@
+Startup = int(input())
+Mike = int(input())
+Ivan = int(input())
+ 
+if (Mike >= Startup) and (Ivan >= Startup):
+    print("2")
+
+elif (Mike >= Startup):
+    print("Mike")
+
+elif (Ivan >= Startup):
+    print("Ivan")
+
+elif (Ivan + Mike) >= Startup:
+    print("1")
+
+else:
+    print("0")

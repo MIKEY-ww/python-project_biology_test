@@ -1,0 +1,37 @@
+# Придумываем слово и выписываем в переменную word.
+print("Напиши слово:")
+word = input()
+
+# Создаём переменные для (строчных и заглавных) гласных.
+# C помощью метода .count("..") считаем сколько раз встречается гласная буква в переменной word.
+a_count = word.count("a")
+e_count = word.count("e")
+i_count = word.count("i")
+o_count = word.count("o")
+u_count = word.count("u")
+A_count = word.count("A")
+E_count = word.count("E")
+I_count = word.count("I")
+O_count = word.count("O")
+U_count = word.count("U")
+
+# vowels_count — общее число гласных.
+# consonants_count — общее число согласных.
+vowels_count = (a_count + e_count + i_count + o_count + u_count)
+consonants_count = len(word) - vowels_count
+
+# Выводим результат на экран.
+print("Согласных букв:", consonants_count)
+print("Гласных букв:", vowels_count)
+
+# Выводим количество гласных букв на экран, в случае отсутсвие пишем False.
+print("a =", a_count if a_count != 0 else False)
+print("e =", e_count if e_count != 0 else False)
+print("i =", i_count if i_count != 0 else False)
+print("o =", o_count if o_count != 0 else False)
+print("u =", u_count if u_count != 0 else False)
+print("A =", a_count if A_count != 0 else False)
+print("E =", e_count if E_count != 0 else False)
+print("I =", i_count if I_count != 0 else False)
+print("O =", o_count if O_count != 0 else False)
+print("U =", u_count if U_count != 0 else False)
