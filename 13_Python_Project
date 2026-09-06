@@ -1,0 +1,16 @@
+result  = ""
+prev = ""
+
+line = input()
+
+for c in line:
+    if c != " ":
+        result += c
+        prev = c
+
+    else:
+        if prev != " ":
+            result += " "
+            prev = " "
+            
+print(result)
