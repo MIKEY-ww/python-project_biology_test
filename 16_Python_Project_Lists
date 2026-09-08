@@ -1,0 +1,23 @@
+# m = вес который выдерживает лодка
+# n = Количество рыбаки
+# a - Вес рыбаков
+#70 60 50 40
+
+
+m = int(input())
+n = int(input())
+a = [int(input()) for _ in range(n)]
+
+left = 0
+right = n - 1
+boats = 0  # начальное количество лодок
+
+while left <= right:
+    boats += 1
+
+    if a[left] + a[right] <= m:
+        left += 1
+
+    right -= 1
+
+print(boats)
