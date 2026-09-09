@@ -1,0 +1,9 @@
+n = int(input())                  # 5
+a = list(map(int, input().split())) #  20 -14 20 2 6
+different = set() # различеые символы
+
+for s in a:
+    if s not in different:
+        different.add(s)
+
+print(len(different))

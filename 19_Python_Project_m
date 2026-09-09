@@ -1,0 +1,8 @@
+n = input().split()
+a = set()
+for s in n:
+        if s not in a:
+            print("NO")
+            a.add(s)
+        else:
+            print("YES")

@@ -1,0 +1,12 @@
+s = int(input())              # количество чисел в первом списке
+first_list  = list(map(int, input().split()))
+first_set  = set(first_list)
+
+
+a = int(input())              # количество чисел во втором списке
+second_list = list(map(int, input().split()))
+second_set = set(second_list)
+
+common = first_set.intersection(second_set)
+
+print(len(common))
