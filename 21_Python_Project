@@ -1,0 +1,7 @@
+dictionary = {}
+
+for i in range(10, -6, -1):
+    result = i ** i
+    dictionary[i] = result
+
+print(dictionary[5])
