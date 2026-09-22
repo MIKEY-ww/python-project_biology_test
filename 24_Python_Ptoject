@@ -1,0 +1,43 @@
+import random
+
+
+def matrix_pr(matrix):
+    for row in matrix:
+        print(*row)
+
+
+def matrix_sum(matrix_1, matrix_2):
+    matrix_3 = []
+
+    for i in range(len(matrix_1)): # проходимся по индексам строк
+        row = []
+
+        for j in range(len(matrix_1[i])): # проходимся по  индексам столбцов
+            result = matrix_1[i][j] + matrix_2[i][j] 
+            row.append(result)
+
+        matrix_3.append(row)
+
+    return matrix_3
+
+
+matrix_1 = [
+    [random.randint(-10, 10) for _ in range(10)]
+    for _ in range(10)
+]
+
+matrix_2 = [
+    [random.randint(-10, 10) for _ in range(10)]
+    for _ in range(10)
+]
+
+print("Первая матрица:")
+matrix_pr(matrix_1)
+
+print("\nВторая матрица:")
+matrix_pr(matrix_2)
+
+matrix_3 = matrix_sum(matrix_1, matrix_2)
+
+print("\nРезультат сложения:")
+matrix_pr(matrix_3)
